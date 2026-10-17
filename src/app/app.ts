@@ -15,7 +15,7 @@ export class App {
   constructor(){
     this.title.set('My Showroom');
   }
-  selectedCar!: Auto
+  selectedCar?: Auto
 
 selectCar(auto: Auto){
   this.selectedCar=auto
@@ -23,6 +23,10 @@ selectCar(auto: Auto){
     document.querySelector('.description')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 }
+closeCar() {
+  this.selectedCar = undefined;
+}
+
 
 
 
