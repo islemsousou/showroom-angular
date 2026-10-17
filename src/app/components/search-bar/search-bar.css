@@ -1,0 +1,88 @@
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 450px;
+  margin: 30px 40px;
+  padding: 10px 18px;
+  background-color: white;
+  border: 2px solid #d9cce8;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-box:focus-within {
+  border-color: #9b7bbd;
+  box-shadow: 0 4px 12px rgba(155, 123, 189, 0.4);
+}
+
+.search-box fa-icon {
+  color: #9b7bbd;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: inherit;
+  background: transparent;
+}
+
+.cars-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+img {
+  width: 80px;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: bold;
+  color: white;
+  background-color: #9b7bbd;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7d5ba0;
+}
+
+.auto-card {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 2px solid gray;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 goldenrod;
+  background-color: white;
+  animation: apparition 0.4s ease;
+}
+
+.auto-card:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes apparition {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.count {
+  margin: 10px 40px;
+  color: gray;
+}
+
+
+

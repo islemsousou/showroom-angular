@@ -1,0 +1,38 @@
+.description {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 30px 35px;
+    padding: 25px;
+    background-color: #f3eef8;
+    border-left: 6px solid #9b7bbd;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description img {
+    width: 220px;
+    height: 130px;
+    object-fit: contain;
+  }
+  
+  .description-text h2 {
+    margin: 0 0 8px;
+    color: #7d5ba0;
+  }
+  
+  .specs {
+    color: gray;
+    font-weight: bold;
+  }
+  
+  .close {
+    all: unset;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    cursor: pointer;
+    color: #7d5ba0;
+    font-size: 1.2rem;
+  }
